@@ -3,7 +3,7 @@ import java.util.ArrayList;
 class Solution {
     public int[] countBits(int n) {
         ArrayList<Integer> ans = new ArrayList<>();
-        int count=0;
+       
         for(int i=0; i <= n ; i++){
             int sum = 0;
             int num = i;
@@ -14,7 +14,7 @@ class Solution {
             }
 
             ans.add(sum);
-            count++;
+            
         }
 
         return ans.stream().mapToInt(Integer::intValue).toArray();

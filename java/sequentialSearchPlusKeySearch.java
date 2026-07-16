@@ -1,5 +1,3 @@
-import java.util.*;
-
 class sequentialSearchPlusKeySearch{
 
 	public static void main(String[] args){

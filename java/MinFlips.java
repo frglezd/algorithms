@@ -12,7 +12,7 @@ class MinFlips{
 
     public static void main(String[] args) {
 
-        String pwd = "101011";//2
+        //String pwd = "101011";//2
         String pwd2 = "100110";//3
         MinFlips solution =  new MinFlips();
         int result = solution.minFlips(pwd2);

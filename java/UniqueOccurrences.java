@@ -20,7 +20,7 @@ class UniqueOccurrences {
 
     public static void main(String[] args){
         int[] nums1 = {1,2,3,1};
-        int[] nums2 = {2,4,6};
+        //int[] nums2 = {2,4,6};
 
         UniqueOccurrences solution = new UniqueOccurrences();
         System.out.println(solution.uniqueOccurrences(nums1));
