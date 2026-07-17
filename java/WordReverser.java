@@ -1,5 +1,5 @@
-class Solution {
-    public String reverseWords(String s) {
+class WordReverser {
+    public static String reverseWords(String s) {
         //s = s.trim();
         String[] words = s.split("\\s+");
         for (int i = 0; i < words.length; i++) {
@@ -16,12 +16,11 @@ class Solution {
 
         return reversed.toString();
     }
-}
-class WordReverser {
+
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        
         String input = "a good   example";
-        String result = solution.reverseWords(input);
+        String result = reverseWords(input);
         System.out.println(result); //desired output: example good a
         //actual output: example   good a
     }

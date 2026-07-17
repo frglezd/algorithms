@@ -1,5 +1,5 @@
-class Solution {
-    public int[] productExceptSelf(int[] nums) {
+class ProductOfArrayExceptSelf {
+    public static int[] productExceptSelf(int[] nums) {
         int n = nums.length;
         int[] result = new int[n];
         int prefix = 1;
@@ -14,14 +14,10 @@ class Solution {
         }
         return result;
     }
-}
-
-public class ProductOfArrayExceptSelf {
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        
         int[] input = {1,2,3,4};
-        int[] result = solution.productExceptSelf(input);
+        int[] result = productExceptSelf(input);
         System.out.println(java.util.Arrays.toString(result));
     }
 }
-    

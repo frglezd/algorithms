@@ -1,5 +1,5 @@
-class Solution {
-    public int compress(char[] chars) {
+class StringCompression {
+    public static int compress(char[] chars) {
         int write = 0;
         int i = 0;
 
@@ -28,13 +28,11 @@ class Solution {
         System.out.println();
         return write;
     }
-}
 
-public class StringCompression {
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        
         char[] input = {'a','a','b','b','c','c','c'};
-        int result = solution.compress(input);
+        int result = compress(input);
         System.out.println(result);
     }
 }
