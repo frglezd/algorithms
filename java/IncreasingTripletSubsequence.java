@@ -1,5 +1,6 @@
-class Solution {
-    public boolean increasingTriplet(int[] nums) {
+public class IncreasingTripletSubsequence {
+
+    public static boolean increasingTriplet(int[] nums) {
         if (nums == null || nums.length < 3) return false;
         int first = Integer.MAX_VALUE;
         int second = Integer.MAX_VALUE;
@@ -14,13 +15,12 @@ class Solution {
         }
         return false;
     }
-}
-
-public class IncreasingTripletSubsequence {
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        
         int[] input = {2,1,5,0,4,6};
-        boolean result = solution.increasingTriplet(input);
+        boolean result = increasingTriplet(input);
         System.out.println(result);
     }
+
+    
 }

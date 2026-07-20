@@ -1,6 +1,8 @@
 
-class Solution {
-    public String reverseVowels(String s) {
+
+class VowelReverser {
+
+    public static String reverseVowels(String s) {
 
         char vowels[] = {'a', 'e', 'i', 'o',  'u', 'A', 'E', 'I', 'O', 'U'};
         char[] characters = s.toCharArray();
@@ -43,13 +45,10 @@ class Solution {
         }
         return new String(characters);
     }
-}
-
-class VowelReverser {
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        
         String input = "hello";
-        String result = solution.reverseVowels(input);
+        String result = reverseVowels(input);
         System.out.println(result); // Output: holle
     }
 }
