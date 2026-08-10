@@ -1,10 +1,8 @@
-import java.util.HashMap;
-import java.util.Map;
 
 class RomanToInt{
     public static int romanToInt(String s){
         int ans=0;
-        Map<String, Integer> map = new HashMap<>();
+
         for(int i=0; i < s.length(); i++){
             int currval = getSymbolValue(s.charAt(i));
 
